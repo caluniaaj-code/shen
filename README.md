@@ -899,7 +899,7 @@
 
     <section id="projects" data-title="PROJECTS">
         <div class="container">
-            <h2>Operational Deployments</h2>
+            <h2>Project</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
