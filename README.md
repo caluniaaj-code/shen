@@ -656,14 +656,14 @@
             <h2>Certifications & Awards</h2>
             <div class="content-grid">
                 <div class="card">
-                    <h3>4️⃣ CODM Competition</h3>
+                    <h3>4️CODM Competition</h3>
                     <div class="card-content">
                         <p style="color: var(--cyber-cyan); font-size: 1.2rem; font-weight: bold;">4TH PLACER</p>
                         <p style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.9rem;">BEYTE FEST EVENT</p>
                     </div>
                 </div>
                 <div class="card">
-                    <h3>🥈 MTV Spoof</h3>
+                    <h3>MTV Spoof</h3>
                     <div class="card-content">
                         <p style="color: var(--cyber-cyan); font-size: 1.2rem; font-weight: bold;">1ST RUNNER UP</p>
                         <p style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.9rem;">BEYTE FEST EVENT</p>
