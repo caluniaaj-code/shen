@@ -54,15 +54,10 @@
         }
 
         @keyframes scanlines {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(10px);
-            }
+            0% { transform: translateY(0); }
+            100% { transform: translateY(10px); }
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -105,17 +100,12 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-shadow: 0 0 20px var(--glow-cyan);
             animation: glow-text 2s ease-in-out infinite;
         }
 
         @keyframes glow-text {
-            0%, 100% {
-                text-shadow: 0 0 20px var(--glow-cyan);
-            }
-            50% {
-                text-shadow: 0 0 30px var(--glow-cyan), 0 0 40px rgba(255, 0, 110, 0.3);
-            }
+            0%, 100% { text-shadow: 0 0 20px var(--glow-cyan); }
+            50% { text-shadow: 0 0 30px var(--glow-cyan), 0 0 40px var(--glow-pink); }
         }
 
         nav ul {
@@ -151,11 +141,8 @@
             text-shadow: 0 0 10px var(--cyber-cyan);
         }
 
-        nav a:hover::before {
-            width: 100%;
-        }
+        nav a:hover::before { width: 100%; }
 
-        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -164,7 +151,6 @@
             z-index: 2;
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -207,12 +193,8 @@
         }
 
         @keyframes drift {
-            0% {
-                transform: translate(0, 0);
-            }
-            100% {
-                transform: translate(50px, 50px);
-            }
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
         }
 
         .hero-content {
@@ -244,15 +226,9 @@
         }
 
         @keyframes glitch {
-            0% {
-                text-shadow: 2px 2px var(--cyber-cyan), -2px -2px var(--cyber-pink);
-            }
-            50% {
-                text-shadow: -2px 2px var(--cyber-pink), 2px -2px var(--cyber-cyan);
-            }
-            100% {
-                text-shadow: 2px 2px var(--cyber-cyan), -2px -2px var(--cyber-pink);
-            }
+            0% { text-shadow: 2px 2px var(--cyber-cyan), -2px -2px var(--cyber-pink); }
+            50% { text-shadow: -2px 2px var(--cyber-pink), 2px -2px var(--cyber-cyan); }
+            100% { text-shadow: 2px 2px var(--cyber-cyan), -2px -2px var(--cyber-pink); }
         }
 
         .hero .subtitle {
@@ -314,9 +290,7 @@
             transition: left 0.5s ease;
         }
 
-        .btn:hover::before {
-            left: 100%;
-        }
+        .btn:hover::before { left: 100%; }
 
         .btn-primary {
             border-color: var(--cyber-cyan);
@@ -344,7 +318,6 @@
             transform: translateY(-3px);
         }
 
-        /* Sections */
         section {
             padding: 8rem 0;
             position: relative;
@@ -384,7 +357,6 @@
             margin: 0 1rem;
         }
 
-        /* Skills Section */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -422,9 +394,7 @@
             border-image: linear-gradient(135deg, var(--cyber-pink), var(--cyber-cyan)) 1;
         }
 
-        .skill-card:hover::before {
-            opacity: 1;
-        }
+        .skill-card:hover::before { opacity: 1; }
 
         .skill-card > * {
             position: relative;
@@ -461,15 +431,10 @@
         }
 
         @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.5;
-            }
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
         }
 
-        /* Proficiency Bars */
         .proficiency-item {
             margin-bottom: 2rem;
         }
@@ -507,12 +472,9 @@
         }
 
         @keyframes fillBar {
-            from {
-                width: 0;
-            }
+            from { width: 0; }
         }
 
-        /* Projects Section */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -548,9 +510,7 @@
             border-color: var(--cyber-pink);
         }
 
-        .project-card:hover::after {
-            opacity: 1;
-        }
+        .project-card:hover::after { opacity: 1; }
 
         .project-header {
             background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(255, 0, 110, 0.2));
@@ -580,7 +540,6 @@
             line-height: 1.9;
         }
 
-        /* Timeline */
         .timeline {
             position: relative;
             padding: 3rem 0;
@@ -657,7 +616,6 @@
             color: var(--text-secondary);
         }
 
-        /* Contact Section */
         .contact-container {
             max-width: 700px;
             margin: 0 auto;
@@ -741,9 +699,7 @@
             z-index: 1;
         }
 
-        .social-links a:hover::before {
-            left: 100%;
-        }
+        .social-links a:hover::before { left: 100%; }
 
         .social-links a:hover {
             border-color: var(--cyber-pink);
@@ -755,7 +711,6 @@
             z-index: 2;
         }
 
-        /* Footer */
         footer {
             background: rgba(5, 8, 17, 0.98);
             padding: 2rem;
@@ -773,29 +728,12 @@
             font-size: 0.9rem;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 3rem;
-            }
-
-            .hero .subtitle {
-                font-size: 1.4rem;
-            }
-
-            nav ul {
-                gap: 1rem;
-                font-size: 0.85rem;
-            }
-
-            section h2 {
-                font-size: 2.5rem;
-            }
-
-            .timeline::before {
-                left: 0;
-            }
-
+            .hero h1 { font-size: 3rem; }
+            .hero .subtitle { font-size: 1.4rem; }
+            nav ul { gap: 1rem; font-size: 0.85rem; }
+            section h2 { font-size: 2.5rem; }
+            .timeline::before { left: 0; }
             .timeline-item {
                 width: 100%;
                 margin-left: 0 !important;
@@ -803,36 +741,19 @@
                 padding-left: 3rem;
                 padding-right: 0;
             }
-
-            .timeline-dot {
-                left: -45px;
-                right: auto;
-            }
-
+            .timeline-dot { left: -45px; right: auto; }
             .timeline-item:nth-child(odd) {
                 text-align: left;
                 padding-right: 0;
                 padding-left: 3rem;
             }
-
-            .cta-buttons {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-            }
-
+            .cta-buttons { flex-direction: column; }
+            .btn { width: 100%; }
             section h2::before,
-            section h2::after {
-                display: none;
-            }
+            section h2::after { display: none; }
         }
 
-        /* Glitch effect on scroll */
-        .glitch-element {
-            animation: glitch-entrance 0.6s ease-out;
-        }
+        .glitch-element { animation: glitch-entrance 0.6s ease-out; }
 
         @keyframes glitch-entrance {
             0% {
@@ -848,15 +769,37 @@
                 transform: translate(0, 0) skewX(0);
             }
         }
+
+        .work-section {
+            background: rgba(0, 212, 255, 0.05);
+            padding: 2.5rem;
+            border: 2px solid var(--cyber-cyan);
+            margin: 2rem 0;
+            border-radius: 4px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .work-section h4 {
+            color: var(--cyber-pink);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .work-section p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="container">
             <div class="logo">> aj.calunia</div>
             <ul>
                 <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
@@ -865,13 +808,12 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>> A.J. L. Calunia</h1>
+            <h1>> A.J. L. CALUNIA</h1>
             <p class="subtitle">[ INFORMATION SYSTEMS DEVELOPER ]</p>
             <p class="bio">
-                Curious, friendly, and determined developer obsessed with cutting-edge technology and pushing computational boundaries. I live in the intersection of innovation and execution—transforming complex problems into elegant digital solutions. Always learning. Always coding. Always evolving.
+                Born December 3, 2006. Curious, friendly, and determined developer passionate about cutting-edge technology and computational excellence. I value honesty, respect, and perseverance in everything I do. Always seeking personal growth through continuous learning and stepping outside my comfort zone.
             </p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn btn-primary">[ INITIATE CONNECTION ]</a>
@@ -880,20 +822,37 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <section id="about" data-title="ABOUT">
+        <div class="container">
+            <h2>WHO I AM</h2>
+            <div class="work-section">
+                <h4>🎯 CORE PHILOSOPHY</h4>
+                <p>
+                    I'm a curious, friendly, and determined person who enjoys learning new things and taking on challenges that help me grow. I believe that personal growth comes from experience, continuous learning, and stepping outside of my comfort zone. I am always looking for opportunities to improve myself and discover new interests. In my free time, I enjoy playing sports, gaming, spending time with friends and family, and exploring topics that fascinate me.
+                </p>
+            </div>
+            <div class="work-section">
+                <h4>🏀 HOBBIES & INTERESTS</h4>
+                <p>
+                    Basketball enthusiast & cycling explorer. I believe that staying active and connected keeps the mind sharp and the spirit high. When I'm not coding, you'll find me on the court or on the road.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section id="skills" data-title="SKILLS">
         <div class="container">
             <h2>Technical Arsenal</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>⚙️ CORE TECHNOLOGIES</h3>
+                    <h3>⚙️ PROGRAMMING</h3>
                     <div class="proficiency-item">
                         <div class="proficiency-header">
                             <span>Java / Swing</span>
                             <span>70%</span>
                         </div>
                         <div class="proficiency-bar">
-                            <div class="proficiency-fill" style="width: 70%; animation-delay: 0s;"></div>
+                            <div class="proficiency-fill" style="width: 70%;"></div>
                         </div>
                     </div>
                     <div class="proficiency-item">
@@ -902,7 +861,7 @@
                             <span>65%</span>
                         </div>
                         <div class="proficiency-bar">
-                            <div class="proficiency-fill" style="width: 65%; animation-delay: 0.1s;"></div>
+                            <div class="proficiency-fill" style="width: 65%;"></div>
                         </div>
                     </div>
                     <div class="proficiency-item">
@@ -911,7 +870,7 @@
                             <span>80%</span>
                         </div>
                         <div class="proficiency-bar">
-                            <div class="proficiency-fill" style="width: 80%; animation-delay: 0.2s;"></div>
+                            <div class="proficiency-fill" style="width: 80%;"></div>
                         </div>
                     </div>
                 </div>
@@ -919,30 +878,25 @@
                 <div class="skill-card">
                     <h3>💬 SOFT SKILLS</h3>
                     <ul class="skill-list">
-                        <li>Communication Protocol</li>
-                        <li>Team Synchronization</li>
-                        <li>Infinite Learning Loop</li>
-                        <li>Problem Solving Algorithms</li>
-                        <li>Time Optimization</li>
-                        <li>Culinary Engineering</li>
+                        <li>Communication Excellence</li>
+                        <li>Team Collaboration</li>
+                        <li>Time Management</li>
                     </ul>
                 </div>
 
                 <div class="skill-card">
-                    <h3>🎮 LEISURE.EXE</h3>
+                    <h3>🎮 LEISURE PROTOCOLS</h3>
                     <ul class="skill-list">
-                        <li>🏀 Basketball Protocols</li>
-                        <li>🚴 Cycling Expeditions</li>
-                        <li>🎮 Gaming Immersion</li>
-                        <li>📚 Knowledge Acquisition</li>
-                        <li>👥 Social Networking</li>
+                        <li>🏀 Basketball Excellence</li>
+                        <li>🚴 Cycling Adventures</li>
+                        <li>🎮 Gaming Mastery</li>
+                        <li>📚 Knowledge Expansion</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" data-title="PROJECTS">
         <div class="container">
             <h2>Operational Deployments</h2>
@@ -951,15 +905,18 @@
                     <div class="project-header">
                         <h3>🏨 MAYCEL HOMETEL IS</h3>
                         <p style="font-size: 0.85rem; opacity: 0.85; letter-spacing: 1px; text-transform: uppercase;">
-                            [ HOSPITALITY SYSTEMS ]
+                            [ HOSPITALITY SYSTEMS INTEGRATION ]
                         </p>
                     </div>
                     <div class="project-body">
                         <p>
-                            An integrated technological infrastructure designed to revolutionize Maycel Hometel operations. This system streamlines reservation management, guest data orchestration, billing automation, and administrative workflows through advanced digital integration.
+                            <strong>Description:</strong> Proposing comprehensive technology-based solutions to revolutionize Maycel Hometel operations and guest services.
                         </p>
-                        <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--cyber-cyan);">
-                            <strong>>> FOCUS_AREAS:</strong> Process optimization, data integrity, security hardening, UX enhancement
+                        <p style="margin-top: 1rem;">
+                            <strong>Objectives:</strong> Enhance efficiency in managing reservations, guest records, billing, and daily administrative tasks through an integrated information system utilizing modern technologies and digital tools.
+                        </p>
+                        <p style="margin-top: 1rem; color: var(--cyber-cyan);">
+                            <strong>>> KEY_OUTCOMES:</strong> Streamlined business processes, improved data accuracy, strengthened security, enhanced user experience, informed decision-making support, and successful adaptation to growing hospitality industry demands.
                         </p>
                     </div>
                 </div>
@@ -967,7 +924,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education" data-title="EDUCATION">
         <div class="container">
             <h2>Academic Background</h2>
@@ -975,17 +931,17 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>> BSIS - Bachelor of Science</h3>
+                        <h3>> BACHELOR OF SCIENCE IN INFORMATION SYSTEMS</h3>
                         <p><strong>Davao del Norte State College</strong></p>
                         <p style="font-size: 0.85rem; color: var(--cyber-cyan); margin-top: 0.5rem;">
-                            [ INFORMATION SYSTEMS ] - ACTIVE
+                            [ BSIS ] - CURRENTLY PURSUING
                         </p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>> SECONDARY EDUCATION</h3>
+                        <h3>> SECONDARY EDUCATION - GAS STRAND</h3>
                         <p><strong>Francisco Bustamante National Highschool</strong></p>
                         <p style="font-size: 0.85rem; color: var(--cyber-cyan); margin-top: 0.5rem;">
                             [ GENERAL ACADEMIC STRAND ] - COMPLETED
@@ -995,8 +951,8 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>> PRIMARY EDUCATION</h3>
-                        <p><strong>AFP Logistics Command Elementary School</strong></p>
+                        <h3>> ELEMENTARY EDUCATION</h3>
+                        <p><strong>Armed Forces of the Philippines Logistics Command Elementary School</strong></p>
                         <p style="font-size: 0.85rem; color: var(--cyber-cyan); margin-top: 0.5rem;">
                             [ FOUNDATION ] - COMPLETED
                         </p>
@@ -1006,13 +962,12 @@
         </div>
     </section>
 
-    <!-- Achievements Section -->
     <section id="achievements" data-title="ACHIEVEMENTS">
         <div class="container">
             <h2>Certifications & Awards</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>🥉 CODM COMPETITION</h3>
+                    <h3>CODM COMPETITION</h3>
                     <p style="color: var(--cyber-cyan); font-size: 1.3rem; font-weight: bold; margin: 1rem 0;">
                         4TH PLACER
                     </p>
@@ -1021,7 +976,7 @@
                     </p>
                 </div>
                 <div class="skill-card">
-                    <h3>🥈 MTV SPOOF</h3>
+                    <h3>MTV SPOOF</h3>
                     <p style="color: var(--cyber-cyan); font-size: 1.3rem; font-weight: bold; margin: 1rem 0;">
                         1ST RUNNER UP
                     </p>
@@ -1033,21 +988,32 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="experience" data-title="EXPERIENCE">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="work-section">
+                <h4>🚚 DELIVERY & CATERING SERVICES</h4>
+                <p>
+                    Professional experience in delivery and catering operations. Managed customer orders, ensured timely service delivery, and maintained high standards of customer satisfaction. Developed strong communication and logistics coordination skills through real-world operational challenges.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" data-title="CONTACT">
         <div class="container">
             <h2>Initialize Connection</h2>
             <div class="contact-container">
                 <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 3rem; letter-spacing: 1px;">
-                    [ Open to collaborations and new opportunities. Your message awaits processing. ]
+                    [ Ready for collaborations and new opportunities. Your message awaits processing. ]
                 </p>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <h3>📞 Phone.Dial()</h3>
+                        <h3>📞 Phone</h3>
                         <a href="tel:09581881471">09581881471</a>
                     </div>
                     <div class="contact-item">
-                        <h3>📧 Email.Send()</h3>
+                        <h3>📧 Email</h3>
                         <a href="mailto:ajcalunia90@gmail.com">ajcalunia90@gmail.com</a>
                     </div>
                 </div>
@@ -1063,31 +1029,22 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>© 2026 A.J. L. CALUNIA | BORN: 03.12.2006 | SYSTEM STATUS: OPERATIONAL</p>
     </footer>
 
     <script>
-        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.3
-        };
-
+        const observerOptions = { threshold: 0.3 };
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1097,11 +1054,10 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.skill-card, .project-card, .timeline-item, .contact-item').forEach(el => {
+        document.querySelectorAll('.skill-card, .project-card, .timeline-item, .contact-item, .work-section').forEach(el => {
             observer.observe(el);
         });
 
-        // Glitch text effect on hover
         const glitchElements = document.querySelectorAll('h1, h2, h3, .logo');
         glitchElements.forEach(el => {
             el.addEventListener('mouseenter', function() {
@@ -1110,9 +1066,7 @@
                     String.fromCharCode(Math.floor(Math.random() * 26) + 65)
                 ).join('');
                 this.textContent = glitched;
-                setTimeout(() => {
-                    this.textContent = original;
-                }, 100);
+                setTimeout(() => { this.textContent = original; }, 100);
             });
         });
     </script>
