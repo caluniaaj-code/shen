@@ -897,7 +897,7 @@
         </div>
     </section>
 
-    <section id="Project..." data-title="PROJECTS">
+    <section id="Project" data-title="PROJECTS">
         <div class="container">
             <h2>Project</h2>
             <div class="projects-grid">
